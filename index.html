@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dialog Gaul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('OJO.jpg'); /* Ganti dengan URL gambar background yang diinginkan */
+            background-size: cover; /* Agar gambar memenuhi seluruh layar */
+            background-position: center; /* Agar gambar terpusat */
+        }
+        #dialog {
+            margin-bottom: 20px;
+            text-align: center;
+            color: white; /* Ubah warna teks sesuai kebutuhan */
+        }
+        #playerName {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            margin-bottom: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+        }
+        .button {
+            margin: 5px;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Dialog Gaul</h1>
+    <input type="text" id="playerName" placeholder="Masukkan Nama Kamu" />
+    <button class="button" onclick="startGame()">Mulai Permainan</button>
+    <div id="dialog"></div>
+    <div id="choices" style="display:none;"></div>
+    <div id="ending" style="display:none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<
